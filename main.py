@@ -8,7 +8,7 @@ def main():
 
 
     DATA_TYPE = 4
-    num_acc = 2
+    num_acc = 1
 
     # LINEAR_MODEL_IN=np.array([
     # [3072,1024,3072,1], 
@@ -49,24 +49,19 @@ def main():
     add1_datasize = (seq * batch) * embed_dim * DATA_TYPE
     layernorm1_datasize = (seq * batch) * embed_dim * DATA_TYPE
 
-    # The PL runs at 200MHz, the off-chip memory bandwidth is 12.8GB/s. (Using portwidth of 512bit.)
-    offchip_bandwidth = 12.8
+    # The off-chip memory bandwidth is set to 8 GB/s.
+    offchip_bandwidth = 8
     # ms
     transpose0_time = transpose0_datasize / offchip_bandwidth / 1000000
     softmax_time = softmax_datasize / offchip_bandwidth / 1000000
     transpose1_time = transpose1_datasize / offchip_bandwidth / 1000000
-    add0_time = add0_datasize / offchip_bandwidth / 1000000
+    add0_time = 2 * add0_datasize / offchip_bandwidth / 1000000
     layernorm0_time = layernorm0_datasize / offchip_bandwidth / 1000000
     gelu_time = gelu_datasize / offchip_bandwidth / 1000000
-    add1_time = add1_datasize / offchip_bandwidth / 1000000
+    add1_time = 2 * add1_datasize / offchip_bandwidth / 1000000
     layernorm1_time = layernorm1_datasize / offchip_bandwidth / 1000000
 
     
-
-
-
-
-
     print("\n LINEAR_MODEL_IN =")
     print(LINEAR_MODEL_IN)
 

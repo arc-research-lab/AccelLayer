@@ -102,20 +102,20 @@ def cdse_top(MODEL_IN,HW_Part,DATA_TYPE):
     freq_rate=230/250
 
     # One-Time Profling of DDR Bandwidth
-    BW_L_S=(14*DDR_BANK)*freq_rate
-    BW_R_S=(14*DDR_BANK)*freq_rate
-    BW_O_S=(11*DDR_BANK)*freq_rate
+    BW_L_S=(12*DDR_BANK)*freq_rate
+    BW_R_S=(12*DDR_BANK)*freq_rate
+    BW_O_S=(9*DDR_BANK)*freq_rate
 
-    BW_L_DR=(11*DDR_BANK)*freq_rate
-    BW_R_DL=(11*DDR_BANK)*freq_rate
+    BW_L_DR=(9*DDR_BANK)*freq_rate
+    BW_R_DL=(9*DDR_BANK)*freq_rate
 
-    BW_L_DO=(11*DDR_BANK)*freq_rate
-    BW_R_DO=(11*DDR_BANK)*freq_rate
-    BW_O_D=(11*DDR_BANK)*freq_rate
+    BW_L_DO=(9*DDR_BANK)*freq_rate
+    BW_R_DO=(9*DDR_BANK)*freq_rate
+    BW_O_D=(9*DDR_BANK)*freq_rate
 
-    BW_L_T=(8*DDR_BANK)*freq_rate
-    BW_R_T=(8*DDR_BANK)*freq_rate
-    BW_O_T=(8*DDR_BANK)*freq_rate
+    BW_L_T=(6*DDR_BANK)*freq_rate
+    BW_R_T=(6*DDR_BANK)*freq_rate
+    BW_O_T=(6*DDR_BANK)*freq_rate
 
 
     ###################### Initialization ###########################

@@ -87,7 +87,7 @@ def cdac_top(MODEL_IN,DATA_TYPE,num_acc):
                 best_cycle=max_cycle
                 final_config=temp_config.copy()
             print('Partition ' + str(i) + ' out of ' + str(round) + ' finish')
-            print('Estimated Throughput is: ' + str(total_ops/max_cycle) + ' GOPS\n\n' )
+            # print('Estimated Throughput is: ' + str(total_ops/max_cycle) + ' GOPS\n\n' )
             print('##################################')
 
         # print("Final Solution for Partition is",end=" ")
