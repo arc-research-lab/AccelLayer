@@ -53,7 +53,7 @@ Assume that linear kernels are running at AIE with 1GHz, and non-linear kernels 
 
 When users type the Transformer-related parameter (sequence length, batch size, attention head dimension, number of attention heads, and MLP ratio in FC layers), the linear kernel workloads are determined.
 
-For example, if the user chooses the same parameter as above, the linear kernel workload consisting of 6 matrix multiplication (MM) or batched matrix multiplication (BMM) is:
+For example, if the user chooses the same parameter as above, the linear kernel workload consisting of 6 matrix multiplication (MM) or batched matrix multiplication (BMM) is[^1]:
 ```terminal
 [[ 192  768 2304    1]
  [ 192   64  192   12]
