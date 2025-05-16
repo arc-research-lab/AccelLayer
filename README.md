@@ -27,20 +27,20 @@ Then, the script will start to run and print the final results in the terminal.
 ============================
 ============================
 The latency for each layer is below:
-QKV gen MM: 1.049453ms.
-QKV transpose layer: 0.221184ms.
-Q*K batch MM: 0.625908ms.
-Softmax layer: 0.221184ms.
-K*V batch MM: 0.815868ms.
-Transpose layer: 0.073728ms.
-Projection MM: 0.360845ms.
-Add layer: 0.147456ms.
-LayerNorm layer: 0.073728ms.
-FC MM: 1.393757ms.
-GeLU layer: 0.294912ms.
-FC MM: 1.215665ms.
-Add layer: 0.147456ms.
-LayerNorm layer: 0.073728ms.
+QKV gen MM:              1.049453ms.
+QKV transpose layer:     0.221184ms.
+Q*K batch MM:            0.625908ms.
+Softmax layer:           0.221184ms.
+K*V batch MM:            0.815868ms.
+Transpose layer:         0.073728ms.
+Projection MM:           0.360845ms.
+Add layer:               0.147456ms.
+LayerNorm layer:         0.073728ms.
+FC MM:                   1.393757ms.
+GeLU layer:              0.294912ms.
+FC MM:                   1.215665ms.
+Add layer:               0.147456ms.
+LayerNorm layer:         0.073728ms.
 ============================
 Total Transformer Block: 6.714872000000001ms.
 ============================
