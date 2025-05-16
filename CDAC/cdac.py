@@ -30,10 +30,10 @@ def cdac_top(MODEL_IN,DATA_TYPE,num_acc):
 
     if num_acc==1:
         final_config,best_cycle,time_layer,HW_Used=cdse_top(MODEL_IN,HW_Part,DATA_TYPE)
-        print('Estimated Latency is: ' + str(best_cycle*1e-6) + ' ms' )
-        print('Estimated Throughput is: ' + str(total_ops/best_cycle) + ' GOPS' )
+        # print('Estimated Latency is: ' + str(best_cycle*1e-6) + ' ms' )
+        # print('Estimated Throughput is: ' + str(total_ops/best_cycle) + ' GOPS' )
         part_final=0
-        print(final_config)
+        # print(final_config)
         return part_final, final_config, time_layer
     else:
         round=len(comb)

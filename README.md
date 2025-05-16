@@ -62,7 +62,7 @@ For example, if the user chooses the same parameter as above, the linear kernel 
  [ 192  768 3072    1]
  [ 192 3072  768    1]]
 ```
-[^1]:The first three elements of each row in the array are the row number of LHS, the column number of LHS, and the column number of RHS. The fourth element of each row in the array is the batch number of BMM.
+[^1]:The first three elements of each row in the array are the row size of LHS, the column size of LHS, and the column size of RHS. The fourth element of each row in the array is the batch size of BMM.
 
 This tool will input the linear kernel workload to the CHARM one monolithic analytical model and generate the estimated latency based on the most efficient hardware configurations.
 ### Non-linear kernels
@@ -79,6 +79,6 @@ GeLU layer: [192, 3072, 1]
 Add layer1: [192, 768, 2]
 Layernorm layer1: [192, 768, 1]
 ```
-[^2]:The first two elements of each row in the array are the row number of the input matrix and the column number of the input matrix. The third element of each row in the array is the batch number of the input matrix.
+[^2]:The first two elements of each row in the array are the row size of the input matrix and the column size of the input matrix. The third element of each row in the array is the batch size of the input matrix.
 
 Assuming that we process the non-linear kernels on PL with the estimated off-chip bandwidth of 8GB/s, we can estimate the latency for each non-linear layer.
