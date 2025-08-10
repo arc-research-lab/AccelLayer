@@ -8,7 +8,7 @@ from NONL import *
 def main():
 
 
-    DATA_TYPE = 4
+    DATA_TYPE = 1
     num_acc = 1
 
 
